@@ -15,9 +15,12 @@ client.once("ready", () => {
 
 client.on("message", async (message: Message) => {
   console.log(message.content);
+  if (message.content.startsWith(`${prefix}ping`)) {
+    message.reply('pong!');
+  }
+
   if (message.content.startsWith(`${prefix}dua`)) {
     message.channel.send("Lipa 🥵");
-    // message.reply('pong!');
   }
 
   if (message.content.startsWith(`${prefix}kick`)) {
