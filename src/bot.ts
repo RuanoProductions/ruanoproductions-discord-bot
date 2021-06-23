@@ -19,8 +19,8 @@ client.on("message", async (message: Message) => {
     message.reply('pong!');
   }
 
-  if (message.content.startsWith(`${prefix}dua`)) {
-    message.channel.send("Lipa 🥵");
+  if (message.content.startsWith(`${prefix}webos`)) {
+    message.channel.send("En efecto, Webos🥵");
   }
 
   if (message.content.startsWith(`${prefix}kick`)) {
